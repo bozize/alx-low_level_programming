@@ -1,22 +1,29 @@
 #include "main.h"
-
 /**
- * puts2 - main function.
- * @str: Pointer, the string to print.
- *
- * Description: This function prints every other character of a string
- * (divisible by two)
- * Return: none.
+ * puts2 - function should print only one character out of two
+ * starting with the first one
+ * @str: input
+ * Return: print
  */
-
 void puts2(char *str)
 {
-	int i;	/* declare integer variable i*/
+	int longi = 0;
+	int t = 0;
+	char *y = str;
+	int o;
 
-	/* loop the string, incrementing i by 2 each time to skip character*/
-	for (i = 0; str[i] != '\0'; i += 2)
+	while (*y != '\0')
 	{
-		_putchar(str[i]);	/* print the character at index i using _putchar*/
+		y++;
+		longi++;
 	}
-	_putchar('\n');	/* print a newline character using _putchar*/
+	t = longi - 1;
+	for (o = 0 ; o <= t ; o++)
+	{
+		if (o % 2 == 0)
+	{
+		_putchar(str[o]);
+	}
+	}
+	_putchar('\n');
 }
