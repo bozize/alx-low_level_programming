@@ -4,7 +4,7 @@
  * @src:source string
  * @dest:destination string
  *
- * @n:condition
+ * @n: number of characters to append
  *
  * Return:dest
  */
