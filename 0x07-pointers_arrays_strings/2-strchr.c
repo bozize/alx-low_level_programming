@@ -2,13 +2,13 @@
 /**
  * _strchr - this functions locates a character in a string
  * @s: string pointer
- * @c: character to be located
+ * @l: character to be located
  *
  * Return: s
  */
-char *_strchr(char *s, char c)
+char *_strchr(char *s, char l)
 {
 	for (; *s != '\0'; s++)
-		if (*s == c)
+		if (*s == l)
 			return (s);
 }
