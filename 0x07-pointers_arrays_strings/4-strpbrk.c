@@ -10,7 +10,7 @@ char *_strpbrk(char *s, char *accept)
 {
 	char j;
 
-	for (; *s != '\0'; s++)
+	for (; *s; s++)
 	{
 		for (j = 0; accept[j]; j++)
 		{
