@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 int _strlen(char *s);
 char *_memcpy(char *dest, char *src, unsigned int n);
