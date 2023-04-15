@@ -8,14 +8,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int x;
+	char *prog_display;
 
-	while (argv[0][i] != '\0')
-	{
-		_putchar(argv[0][i]);
-		i++;
-	}
-	_putchar('\n');
+	prog_display = argv[0];
+	(void)argc;
 
+	for (x = 0; prog_display[x] != '\0'; x++)
+		printf("%c", prog_display[x]);
+
+	printf("\n");
 	return (0);
 }
