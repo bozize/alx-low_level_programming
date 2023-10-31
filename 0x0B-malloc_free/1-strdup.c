@@ -12,12 +12,14 @@
  */
 char *_strdup(char *str)
 {
+	char duplicate;
+
 	if (str == 0)
 	{
 		return (NULL);
 	}
 
-	duplicate = (char *)malloc(strlen(str) + 1);
+	char *duplicate = (char *)malloc(strlen(str) + 1);
 
 	if (duplicate == 0)
 	{
