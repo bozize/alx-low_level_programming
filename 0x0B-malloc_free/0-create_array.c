@@ -2,14 +2,14 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _create_array - creates array of characters
+ * create_array - creates array of characters
  *
  * @c:character
  * @size: un assigned int
  *
  * Return:null or pointer to the array
  */
-char *_create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
 	{
