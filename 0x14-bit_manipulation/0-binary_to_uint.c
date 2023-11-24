@@ -9,6 +9,8 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	unsigned int final;
+	int hold;
 
 	if (b == NULL)
 	{
