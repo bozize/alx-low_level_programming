@@ -9,13 +9,15 @@
  */
 void print_binary(unsigned long int n)
 {
+	unsigned long int mask;
+
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
 
-	unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
 	int leading_zeros = 1;
 
 	while (mask > 0)
