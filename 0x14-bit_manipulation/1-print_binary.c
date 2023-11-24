@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 	{
 		if (mask & n)
 		{
-			leading_zeros = '0';
+			leading_zeros = 0;
 				_putchar('1');
 		}
 
